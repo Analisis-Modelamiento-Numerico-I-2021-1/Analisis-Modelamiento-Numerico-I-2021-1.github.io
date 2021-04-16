@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "analisis-modelamiento-numerico-i-2021-1.github.io"
+version = "0.1.0"
+description = "Página web basada en Pelican Static generator (python language)"
+authors = ["Carlos Aznarán Laos <caznaranl@uni.pe>"]
+license = "GPL2"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pelican = "^4.6.0"
+Markdown = "^3.3.4"
+typogrify = "^2.0.7"
+
+[tool.poetry.dev-dependencies]
+autopep8 = "^1.5.6"
+black = "^20.8b1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,38 @@
+name: Deploy pages
+
+on:
+  push:
+    branches: [main]
+    # paths:
+    #   - docs/**
+  pull_request:
+    branches: [main]
+  # schedule:
+  #   - cron: "0 15 * * 5"
+
+jobs:
+  deploy_pages:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9.3
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - uses: psf/black@stable
+        with:
+          black_args: ". --check"
+
+      - name: Create output
+        run: make html
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: output
