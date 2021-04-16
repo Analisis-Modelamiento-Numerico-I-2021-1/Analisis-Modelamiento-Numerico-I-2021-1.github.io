@@ -9,7 +9,7 @@ SITEURL = 'https://Analisis-Modelamiento-Numerico-I-2021-1.github.io'
 PATH = 'content'
 THEME = 'themes/Flex'
 TIMEZONE = 'America/Lima'
-
+PLUGINS = None
 DEFAULT_LANG = 'es'
 
 # Feed generation is usually not desired when developing

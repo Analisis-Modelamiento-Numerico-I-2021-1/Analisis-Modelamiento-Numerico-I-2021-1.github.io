@@ -7,6 +7,6 @@ Slug: flex-pelican-theme
 
 [Flex theme](https://github.com/alexandrevicenzi/Flex) 2.4.0 comes with minor changes.
 
-- Updated translations (Italian, Spanish, Portuguese, German, Turkish)
+Hola $x$.
 
-Hope you enjoy this version.
+$$\int_{-\infty}^{\infty}\hat{f}(\xi)e^{2\pi i}\,d\xi$$
